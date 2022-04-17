@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+            <div class="input-area">
+                <div class="color-input">
+                    <label class="label" for="color-input">Select color</label>
+                    <input type="color" value="#123456" id="color-input" name="color-picker" /> 
+                </div>
+                <div class="box"> 
+                    <select class="schemes" id="mode-options">
+                        <option value="analogic">Analogic</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="complement">Complement</option>
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-Dark</option>
+                        <option value="monochrome-light">Monochrome-Light</option>
+                    </select>
+                </div>
+                <button type="submit" id="button" onclick="loadPage()">Get color scheme</button>
+            </div>
+            
+        <div class="columns">
+        </div>
+
+    <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #111827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    width: 100vw;
+}
+
+
+.input-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.box {
+    width: 60%;
+}
+
+.box #mode-options {
+    display: flex;
+    border: 1px solid #D1D5DB;
+    color: inherit;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.color-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    color: inherit;
+    font-size: .75rem;
+}
+
+button {
+    padding: 11px 5px;
+    background: white;
+    border: 1px solid #D1D5DB;
+    color: inherit;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+.hex-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.column {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hex {
+    padding: 0 2em;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    body {
+       align-items: flex-start; 
+       border: 1px solid greenyellow;
+    }
+    
+    .input-area {
+        height: 12em;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-around;
+        margin-left: 1em;
+    }
+    
+    .columns {
+        flex-direction: column;
+        margin-left: 1em;
+        border: 2px solid red;
+    }
+    
+    .hex-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 1px solid greenyellow;
+    }
+    
+    .column {
+        padding: 3em;
+        height: 100%;
+        width: 70%;
+    }
+    
+    .hex {
+        margin-left: 1em;
+        padding: 0;
+    }
+        
+}

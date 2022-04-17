@@ -21,7 +21,6 @@ function loadPage() {
                                     //default hex color and mode
     .then(res => res.json())
     .then(data => {
-        console.log(data.colors)
         getScheme(data.colors) // callback function, mapping over data from API
     })
 

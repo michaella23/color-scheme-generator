@@ -78,11 +78,10 @@ button {
     padding: 0 2em;
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 750px) {
     
     body {
        align-items: flex-start; 
-       border: 1px solid greenyellow;
     }
     
     .input-area {
@@ -96,14 +95,12 @@ button {
     .columns {
         flex-direction: column;
         margin-left: 1em;
-        border: 2px solid red;
     }
     
     .hex-column {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        border: 1px solid greenyellow;
     }
     
     .column {
@@ -117,4 +114,5 @@ button {
         padding: 0;
     }
         
+} 
 }

@@ -49,7 +49,7 @@ body {
 }
 
 button {
-    padding: 11px 5px;
+    padding: 1em;
     background: white;
     border: 1px solid #D1D5DB;
     color: inherit;
@@ -107,10 +107,11 @@ button {
         padding: 3em;
         height: 100%;
         width: 70%;
+        margin: 0 1em;
     }
     
     .hex {
-        margin-left: 1em;
+        width: 30%;
         padding: 0;
     }
         

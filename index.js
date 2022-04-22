@@ -1,21 +1,13 @@
 let columns = document.querySelector(".columns")
 let hexCodes = document.querySelectorAll(".hex")
-let colorVal = "123456"
-
 let colorPicker = document.getElementById("color-input")
 let modeOptions = document.getElementById("mode-options")
 
-
+let colorVal = "123456"
 modeOptions.value = "analogic"
-// get color input for API call
 
-// going to watch for change on input elements
 
-// can declare a variable here which holds default color value for innerHTML
-
-//https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
-
-//when app loads, this is initial output
+//when app loads, this is initial output. template strings are predefined for first load.
 function loadPage() {
     fetch(`https://www.thecolorapi.com/scheme?hex=${colorPicker.value.substr(1)}&mode=${modeOptions.value}&count=5`)
                                     //default hex color and mode
@@ -28,8 +20,7 @@ function loadPage() {
 
 loadPage()
 
-// getScheme takes into account both of the input values, template strings enable DRY code
-
+// getScheme runs on click event
 function getScheme(colors) {
     columns.innerHTML = ""
         colors.map(item => {

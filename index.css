@@ -55,6 +55,12 @@ button {
     color: inherit;
 }
 
+input:hover, input:focus,
+select:hover, select:focus,
+button:hover, button:focus {
+    background-color: #D1D5DB;
+}
+
 .columns {
     display: flex;
     justify-content: center;

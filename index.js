@@ -22,12 +22,18 @@ function getScheme(colors) {
         colors.map(item => {
         
         let color = item.hex.value
-        
+
         columns.innerHTML += `
-        <section class="hex-column" onclick="copyToClip()">
+        <section class="hex-column" onclick="copyToClip('${color}')">
             <div class="column" style="background-color: ${color}"></div>
             <p class="hex">${color}</p>
         </section>
         `
         })
+}
+
+// click anywhere in the hex-column to copy the hex code to clipboard
+function copyToClip(color) {
+        navigator.clipboard.writeText(color)
+        alert(`Copied ${color} to clipboard!`)
 }

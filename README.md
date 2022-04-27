@@ -2,9 +2,9 @@
 
 For this project I used the API https://www.thecolorapi.com/, the color input, and an options menu to allow the user to generate a variety of different color schemes to be used for graphic and web design.
 
-I used a Figma file to design the layout for desktop/laptop screens, but I also wanted this to be easy to use on mobile.
+I used a design scheme from a Figma file to create the layout for desktop/laptop screens, but I also wanted this to be easy to use on mobile.
 
-Want to add another level of functionality, by adding in code that allows the user to copy hex codes to the clipboard for easy transfer to their own files.
+To add another level of functionality, I created a function that allows the user to copy hex codes to the clipboard for easy transfer to their own files.
 
 ## Supporting Scrimba
 

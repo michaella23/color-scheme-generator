@@ -3,10 +3,6 @@ let hexCodes = document.querySelectorAll(".hex")
 let colorPicker = document.getElementById("color-input")
 let modeOptions = document.getElementById("mode-options")
 
-let colorVal = "123456"
-modeOptions.value = "analogic"
-
-
 //when app loads, this is initial output. template strings are predefined for first load.
 function loadPage() {
     fetch(`https://www.thecolorapi.com/scheme?hex=${colorPicker.value.substr(1)}&mode=${modeOptions.value}&count=5`)
@@ -28,11 +24,10 @@ function getScheme(colors) {
         let color = item.hex.value
         
         columns.innerHTML += `
-        <section class="hex-column">
-            <div class="column" style = "background-color: ${color}"></div>
+        <section class="hex-column" onclick="copyToClip()">
+            <div class="column" style="background-color: ${color}"></div>
             <p class="hex">${color}</p>
         </section>
         `
         })
 }
-
